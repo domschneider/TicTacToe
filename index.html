@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Tic-Tac-Toe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible content="IE=edge">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <title>Tic-Tac-Toe</title>
     </head>
+    <body>
+        <div class="container">
+            <h1>Tic-Tac-Toe</h1>
 
-    <body>  
-        <h1>Tic-Tac-Toe</h1>
-        <div class="player-game-options">
-            <button onclick="">PLAY COMPUTER</button><button onclick="">PLAY OFFLINE</button><button onclick="">PLAY ONLINE</button>
+            <div class="player-game-options">
+                <button id="computerButton">Single Player Game</button>  <button id="playerButton">2 Player Game</button>
+            </div><br></br>
+            <div class="current-player-turn" id="current-player-turn"></div><br></br>
+            <div class="game-board" id="game-board"></div><br></br>
+            <button onclick="reset_board()">RESET</button>
+        </div> 
+
+        <div class="results-display" id="results-display">
+            <div id="data-winning-message-text"></div>
+            <button onclick="singlePlayer()">Play Single Player</button><button onclick="multiplayer()">Play 2 Player</button>
         </div>
-
-        <div class="game-board">
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-        </div>
-
-        <button onclick="reset_board()">RESET</button>
     </body>
 </html>
